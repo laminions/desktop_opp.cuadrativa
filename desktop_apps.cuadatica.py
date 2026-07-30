@@ -92,7 +92,7 @@ def resolver():
 # ------------------------------------------
 ventana_principal = Tk()
 ventana_principal.title("Sistemas Guanentá - Ecuación Cuadrática")
-ventana_principal.geometry("500x520")
+ventana_principal.geometry("600x520")
 ventana_principal.config(bg="black")
 ventana_principal.resizable(0, 0)
 
@@ -112,16 +112,16 @@ frame_entrada.place(x=10, y=10)
 
 # Título de la app
 titulo = Label(frame_entrada, text="Ecuación: ax² + bx + c = 0")
-titulo.config(bg="lightblue", fg="blue", font=("Arial", 16, "bold"))
+titulo.config(bg="white", fg="pink", font=("Arial", 16, "bold"))
 titulo.place(x=100, y=15)
 
 aviso = Label(frame_entrada, text="Ingrese los coeficientes a, b y c:")
-aviso.config(bg="lightblue", fg="blue", font=("Arial", 11))
+aviso.config(bg="white", fg="pink", font=("Arial", 11))
 aviso.place(x=120, y=50)
 
 # Entrada Coeficiente A
 lb_a = Label(frame_entrada, text="a =")
-lb_a.config(bg="lightblue", fg="blue", font=("Arial", 14))
+lb_a.config(bg="white", fg="pink", font=("Arial", 14))
 lb_a.place(x=150, y=90)
 
 entry_a = Entry(frame_entrada, textvariable=a)
@@ -131,7 +131,7 @@ entry_a.place(x=200, y=90, width=120, height=30)
 
 # Entrada Coeficiente B
 lb_b = Label(frame_entrada, text="b =")
-lb_b.config(bg="lightblue", fg="blue", font=("Arial", 14))
+lb_b.config(bg="white", fg="pink", font=("Arial", 14))
 lb_b.place(x=150, y=135)
 
 entry_b = Entry(frame_entrada, textvariable=b)
@@ -140,7 +140,7 @@ entry_b.place(x=200, y=135, width=120, height=30)
 
 # Entrada Coeficiente C
 lb_c = Label(frame_entrada, text="c =")
-lb_c.config(bg="lightblue", fg="blue", font=("Arial", 14))
+lb_c.config(bg="white", fg="pink", font=("Arial", 14))
 lb_c.place(x=150, y=180)
 
 entry_c = Entry(frame_entrada, textvariable=c)
@@ -175,7 +175,7 @@ frame_resultados.place(x=10, y=360)
 
 # Área de texto para mostrar las raíces x1 y x2
 t_resultados = Text(frame_resultados)
-t_resultados.config(bg="white", fg="black", font=("Arial", 12))
+t_resultados.config(bg="pink", fg="black", font=("Arial", 12))
 t_resultados.place(x=10, y=10, width=460, height=120)
 
 # Bucle principal
